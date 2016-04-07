@@ -27,10 +27,7 @@ module.exports = function(config) {
       'vendor/chai.js',
       'vendor/mocha.js',
       'vendor/mocha-blanket.js',
-      'js/conversor_test.js',
-      'js/main.js',
-      'js/medida.js',
-      'js/temperatura.js',
+      'main.js',
       'index.html'
     ],
 
