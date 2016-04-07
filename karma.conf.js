@@ -41,8 +41,8 @@ module.exports = function(config) {
       'karma-mocha',
       'karma-chai',
       'karma-chrome-launcher',
-      'karma-firefox-launcher',
-      'karma-safari-launcher'
+      'karma-firefox-launcher' //,
+    //  'karma-safari-launcher'
     ],
 
     // test results reporter to use
@@ -78,8 +78,8 @@ module.exports = function(config) {
     browsers: [
                'Chrome',
                'Firefox',
-               'PhantomJS',
-               'Safari'
+               'PhantomJS'//,
+            //   'Safari'
                ],
 
 
