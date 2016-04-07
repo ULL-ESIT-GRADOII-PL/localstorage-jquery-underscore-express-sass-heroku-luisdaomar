@@ -10,11 +10,11 @@ module.exports = function(config) {
     // frameworks to use
     frameworks: ['mocha', 'chai'],
 
-    //client: {
-    //      mocha: {
-    //          ui: 'tdd'
-    //      }
-    //},
+    client: {
+      mocha: {
+              ui: 'bdd'
+          }
+    },
 
     //preprocessors: {
     //      'tests/test.html': ['html2js']
@@ -44,6 +44,13 @@ module.exports = function(config) {
       'karma-firefox-launcher' //,
     //  'karma-safari-launcher'
     ],
+
+    customLaunchers: {
+    Chrome_travis_ci: {
+      base: 'Chrome',
+      flags: ['--no-sandbox']
+    }
+  },
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
@@ -76,7 +83,7 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
     browsers: [
-               'Chrome',
+               'Chrome_travis_ci',
                'Firefox',
                'PhantomJS'//,
             //   'Safari'
