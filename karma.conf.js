@@ -27,8 +27,8 @@ module.exports = function(config) {
       'vendor/chai.js',
       'vendor/mocha.js',
       'vendor/mocha-blanket.js',
-      'main.js',
-      'index.html'
+      'public/main.js',
+      'public/index.html'
     ],
 
 
@@ -40,8 +40,8 @@ module.exports = function(config) {
     plugins : [
       'karma-mocha',
       'karma-chai',
-      'karma-chrome-launcher',
-      'karma-firefox-launcher' //,
+      'karma-chrome-launcher'//,
+      //'karma-firefox-launcher' //,
     //  'karma-safari-launcher'
     ],
 
@@ -84,7 +84,7 @@ module.exports = function(config) {
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
     browsers: [
                'Chrome_travis_ci',
-               'Firefox',
+               //'Firefox',
                'PhantomJS'//,
             //   'Safari'
                ],
