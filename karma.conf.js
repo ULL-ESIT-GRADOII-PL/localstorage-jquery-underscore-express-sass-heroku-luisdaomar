@@ -40,8 +40,8 @@ module.exports = function(config) {
     plugins : [
       'karma-mocha',
       'karma-chai',
-      'karma-chrome-launcher'//,
-      'karma-firefox-launcher' //,
+      'karma-chrome-launcher',
+      'karma-firefox-launcher',
       'karma-safari-launcher'
     ],
 
