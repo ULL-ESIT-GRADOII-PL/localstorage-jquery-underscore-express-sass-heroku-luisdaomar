@@ -28,7 +28,8 @@ module.exports = function(config) {
       'vendor/mocha.js',
       'vendor/mocha-blanket.js',
       'public/main.js',
-      'public/index.html'
+      'public/index.html',
+      'public/csv.js'
     ],
 
 
@@ -83,10 +84,10 @@ module.exports = function(config) {
     // - PhantomJS
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
     browsers: [
-               //'Chrome_travis_ci',
+               'Chrome_travis_ci',
                'Firefox',
-               'PhantomJS'//,
-            //   'Safari'
+               'PhantomJS',
+               'Safari'
                ],
 
 
