@@ -43,6 +43,7 @@ module.exports = function(config) {
       'karma-chai',
       'karma-chrome-launcher',
       'karma-firefox-launcher',
+      'karma-html2js-preprocessor',
       'karma-safari-launcher'
     ],
 
