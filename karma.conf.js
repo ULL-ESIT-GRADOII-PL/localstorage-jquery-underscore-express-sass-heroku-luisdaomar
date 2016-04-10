@@ -87,7 +87,7 @@ module.exports = function(config) {
                'Chrome_travis_ci',
                //'Firefox',
                'PhantomJS',
-               'Safari'
+               //'Safari'
                ],
 
 
