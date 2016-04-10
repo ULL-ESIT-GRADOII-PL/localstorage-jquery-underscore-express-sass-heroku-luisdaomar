@@ -16,9 +16,9 @@ module.exports = function(config) {
           }
     },
 
-    //preprocessors: {
-    //      'tests/test.html': ['html2js']
-    //},
+    preprocessors: {
+          'tests/test.html': ['html2js']
+    },
 
 
     // list of files / patterns to load in the browser
@@ -46,12 +46,12 @@ module.exports = function(config) {
       'karma-safari-launcher'
     ],
 
-  /*  customLaunchers: {
+   customLaunchers: {
     Chrome_travis_ci: {
       base: 'Chrome',
       flags: ['--no-sandbox']
     }
-  },*/
+  },
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
