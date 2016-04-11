@@ -16,20 +16,21 @@ module.exports = function(config) {
           }
     },
 
-    //preprocessors: {
-    //      'tests/test.html': ['html2js']
-    //},
+    preprocessors: {
+          'tests/test.html': ['html2js']
+    },
 
 
     // list of files / patterns to load in the browser
     files: [
-      'vendor/blanket.js',
-      'vendor/chai.js',
-      'vendor/mocha.js',
-      'vendor/mocha-blanket.js',
-      'public/main.js',
-      'public/index.html',
-      'public/csv.js'
+      'public/vendor/blanket.js',
+      'public/vendor/chai.js',
+      'public/vendor/mocha.js',
+      'public/vendor/mocha-blanket.js',
+      'public/vendor/sinon-1.12.2.js',
+      'public/vendor/sinon-1.17.3.js',
+      'public/csv.js',
+      'public/csv_test.js'
     ],
 
 
@@ -43,15 +44,16 @@ module.exports = function(config) {
       'karma-chai',
       'karma-chrome-launcher',
       'karma-firefox-launcher',
+      'karma-html2js-preprocessor',
       'karma-safari-launcher'
     ],
 
-  /*  customLaunchers: {
+   customLaunchers: {
     Chrome_travis_ci: {
       base: 'Chrome',
       flags: ['--no-sandbox']
     }
-  },*/
+  },
 
     // test results reporter to use
     // possible values: 'dots', 'progress', 'junit', 'growl', 'coverage'
@@ -85,9 +87,9 @@ module.exports = function(config) {
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
     browsers: [
                'Chrome_travis_ci',
-               'Firefox',
-               'PhantomJS',
-               'Safari'
+               //'Firefox',
+               //'PhantomJS',
+               //'Safari'
                ],
 
 
