@@ -23,13 +23,15 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      'vendor/blanket.js',
-      'vendor/chai.js',
-      'vendor/mocha.js',
-      'vendor/mocha-blanket.js',
+      'public/vendor/blanket.js',
+      'public/vendor/chai.js',
+      'public/vendor/mocha.js',
+      'public/vendor/mocha-blanket.js',
       'public/main.js',
       'public/index.html',
-      'public/csv.js'
+      'public/indextest.html',
+      'public/csv.js',
+      'public/csv_test.js'
     ],
 
 
