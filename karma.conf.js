@@ -27,6 +27,8 @@ module.exports = function(config) {
       'public/vendor/chai.js',
       'public/vendor/mocha.js',
       'public/vendor/mocha-blanket.js',
+      'public/vendor/sinon-1.12.2',
+      'public/vendor/sinon-1.17.3',
       'public/csv.js',
       'public/csv_test.js'
     ],
